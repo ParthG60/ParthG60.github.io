@@ -22,6 +22,7 @@ body {
 
 h1 { font-size: 2.7rem; font-weight: 500; margin: 0 0 12px; letter-spacing: .3px; }
 h2 { font-size: 1.45rem; font-weight: 500; margin: 40px 0 10px; }
+h3 { font-size: 1.15rem; font-weight: 500; margin: 28px 0 8px; }
 p { margin: 0 0 18px; }
 
 a { color: inherit; text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
