@@ -18,10 +18,10 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-.wrap { max-width: var(--maxw); margin: 0 auto; padding: 60px 24px 80px; }
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 80px; }
 
-h1 { font-size: 2.7rem; font-weight: 500; margin: 0 0 12px; letter-spacing: .3px; }
-h2 { font-size: 1.45rem; font-weight: 500; margin: 40px 0 10px; }
+h1 { font-size: 2.7rem; font-weight: 500; margin: 20px 0 12px; letter-spacing: .3px; }
+h2 { font-size: 1.45rem; font-weight: 500; margin: 38px 0 10px; }
 h3 { font-size: 1.15rem; font-weight: 500; margin: 28px 0 8px; }
 p { margin: 0 0 18px; }
 
@@ -29,20 +29,68 @@ a { color: inherit; text-decoration: underline; text-underline-offset: 2px; text
 a:hover { color: var(--link-hover); }
 .muted { color: var(--muted); }
 
-nav { margin: 0; }
-nav a { text-decoration: none; margin-right: 22px; font-size: 1.08rem; }
-nav a:last-child { margin-right: 0; }
+/* Sticky nav, sits above the page title so you can switch pages from anywhere */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 22px;
+  row-gap: 6px;
+  margin: 0;
+  padding: 16px 0 12px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+}
+nav a { text-decoration: none; font-size: 1.08rem; }
 nav a.active { text-decoration: underline; text-underline-offset: 5px; }
-hr { border: none; border-top: 1px solid var(--rule); margin: 18px 0 30px; }
+
+.copy-llm {
+  margin-left: auto;
+  font-family: inherit;
+  font-size: .9rem;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 3px 11px;
+  cursor: pointer;
+  line-height: 1.35;
+}
+.copy-llm:hover { color: var(--link-hover); border-color: var(--link-hover); }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 5px 13px;
+}
+.btn:hover { border-color: var(--link-hover); color: var(--link-hover); }
 
 ul { padding-left: 1.15em; margin: 0 0 18px; }
 li { margin: 0 0 9px; }
+
+/* Resume entries */
+.r-title {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; margin: 22px 0 0; font-weight: 500;
+}
+.r-title .r-date { color: var(--muted); font-size: .92rem; font-weight: 400; white-space: nowrap; }
+.r-role { font-style: italic; color: var(--muted); margin: 1px 0 6px; }
+.r-entry ul { margin-top: 4px; }
+
+hr { border: none; border-top: 1px solid var(--rule); margin: 18px 0 24px; }
 
 footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 1rem; }
 
 @media (max-width: 560px) {
   body { font-size: 20px; }
-  .wrap { padding: 40px 20px 60px; }
+  .wrap { padding: 0 20px 60px; }
   h1 { font-size: 2.2rem; }
-  nav a { margin-right: 16px; display: inline-block; margin-bottom: 6px; }
+  nav { column-gap: 15px; }
+  .copy-llm { font-size: .82rem; padding: 2px 8px; }
+  .r-title { flex-direction: column; gap: 0; }
 }
