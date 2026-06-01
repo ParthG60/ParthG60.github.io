@@ -82,6 +82,11 @@ li { margin: 0 0 9px; }
 .r-role { font-style: italic; color: var(--muted); margin: 1px 0 6px; }
 .r-entry ul { margin-top: 4px; }
 
+/* Slightly smaller, denser type on the resume page */
+body.resume { font-size: 19px; }
+body.resume h1 { font-size: 2.3rem; }
+body.resume h2 { font-size: 1.32rem; margin-top: 30px; }
+
 hr { border: none; border-top: 1px solid var(--rule); margin: 18px 0 24px; }
 
 footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 1rem; }
