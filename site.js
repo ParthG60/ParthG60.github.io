@@ -39,3 +39,21 @@ function copyForLLM(btn) {
     setTimeout(function () { btn.textContent = "Copy for LLM"; }, 1600);
   });
 }
+
+// Open outbound links (Substack, LinkedIn, project links) and the dashboard in a new tab,
+// so visitors never lose the site. Internal page nav (About / Writing & Projects / Résumé)
+// and mailto links stay in the same tab.
+(function () {
+  var here = location.hostname;
+  document.querySelectorAll("a[href]").forEach(function (a) {
+    var url;
+    try { url = new URL(a.href); } catch (e) { return; }
+    if (url.protocol !== "http:" && url.protocol !== "https:") return;
+    var external = url.hostname !== here;
+    var isDashboard = url.pathname.indexOf("/ai-economic-indicators-uk") === 0;
+    if (external || isDashboard) {
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    }
+  });
+})();
