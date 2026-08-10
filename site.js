@@ -8,7 +8,7 @@ var LLM_PROFILE = [
   "I build systematic investment signals and risk models at Orbis Investments, and I write data-driven economics for a general audience at Parth's Datastack. The thread through both: how talent and capital get allocated, and what it costs when they are misallocated.",
   "",
   "## Writing — Parth's Datastack (parthsdatastack.substack.com)",
-  "- The Great Talent Misallocation: why so much elite talent pours into finance, and when that becomes everyone's problem.",
+  "- Slop Detective: scanning a few thousand Substack posts with an AI detector, on who's publishing machine-written work and whether readers can tell.",
   "- Creative Destruction: the 2025 economics Nobel, on how fading competition and rising markups throttle growth.",
   "",
   "## Projects",
