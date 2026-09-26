@@ -73,6 +73,16 @@ nav a.active { text-decoration: underline; text-underline-offset: 5px; }
 ul { padding-left: 1.15em; margin: 0 0 18px; }
 li { margin: 0 0 9px; }
 
+/* Featured project: subtle card with an editorial accent rule */
+li.featured {
+  padding: 10px 15px;
+  background: #f7edda;
+  border-left: 3px solid var(--link-hover);
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+li.featured::marker { color: var(--link-hover); }
+
 /* Resume entries */
 .r-title {
   display: flex; justify-content: space-between; align-items: baseline;

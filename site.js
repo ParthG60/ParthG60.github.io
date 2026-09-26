@@ -12,6 +12,7 @@ var LLM_PROFILE = [
   "- Creative Destruction: the 2025 economics Nobel, on how fading competition and rising markups throttle growth.",
   "",
   "## Projects",
+  "- Is AI Writing American Law? (Effort, with Brian Chau): scanned every bill in the US Congress since 2023; AI-written text in findings and preambles tripled to about 6% by mid-2026, and ~15% of Congressional Record Extensions of Remarks. https://www.effort.news/ai-congress",
   "- UK AI Economic Indicators: a live, interactive dashboard replicating Stanford's AI Economic Indicators for the UK across adoption, macroeconomic transformation, and the labour market, built from public UK data (ONS, Bank of England, Ofcom, Labour Force Survey microdata). Python and Plotly. Live: https://parthgoyal.uk/ai-economic-indicators-uk/ Code: https://github.com/ParthG60/ai-economic-indicators-uk",
   "- Modelling Political Polarization: an interactive 5,000-agent simulation from my St Andrews dissertation (Python/Streamlit): modelling-political-polarization.streamlit.app",
   "",
